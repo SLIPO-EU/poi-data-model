@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://slipo.eu/def" elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:slipo="http://slipo.eu/def" xmlns:xml="http://www.w3.org/XML/1998/namespace">
+	
+	<xsd:annotation>
+		<xsd:documentation>XML schema for SLIPO POIs.</xsd:documentation>
+	</xsd:annotation>
+
+	<xsd:complexType name="POI">
+		<xsd:annotation>
+			<xsd:documentation>A POI.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:anyURI" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>A URI identifying the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="name" type="slipo:Name" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Name of the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="description" type="xsd:string" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						A description of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="source" type="slipo:SourceInfo"
+				maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Sources of data for the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="slipoURI" type="xsd:anyURI" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The SLIPO URL of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="homepage" type="xsd:anyURI" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The URL of the official web page of the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherLink" type="xsd:anyURI" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Additional link for the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="category" type="xsd:anyURI"
+				maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>A URI identifying a term in some classification scheme.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="tag" type="xsd:string" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A tag assigned to the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="address" type="slipo:Address" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>An address of the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="phone" type="slipo:Contact" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Telephone number of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="email" type="slipo:Contact" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Email address of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="fax" type="slipo:Contact" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Fax number of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="media" type="slipo:Media" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A media object associated with the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="priceTier" type="slipo:Rating" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The price tier of the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="rating" type="slipo:Rating" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A rating of the POI.	</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="validFrom" type="xsd:dateTime" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The time when the POI starts to exist.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="validTo" type="xsd:dateTime" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The time when the POI stops to exist.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="lastUpdated" type="xsd:dateTime" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The time when the information of the POI was last updated.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="openingHours" type="slipo:TimeSlot" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Opening hours of the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="popularHours" type="slipo:TimeSlot" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Popular hours of the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="service" type="slipo:Service" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Service offered by the POI.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="paymentMethod" type="slipo:PaymentMethod" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Payment method accepted by the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="lon" type="xsd:double" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The longitude of the POI's location.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="lat" type="xsd:double" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The latitude of the POI's location.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="alt" type="xsd:double" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The altitude of the POI's location.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="geom" type="slipo:Geometry" maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The POI's geometry.	</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="accuracy" type="slipo:AccuracyInfo" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Accuracy information for the POI's data.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="otherAttr" type="slipo:KeyValAttr" maxOccurs="unbounded" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Other attribute, specified in key-value format.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Name">
+		<xsd:annotation>
+			<xsd:documentation>A POI name.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="nameValue" type="xsd:string"
+				maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The name.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="nameType" type="xsd:string" maxOccurs="1"
+				minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The type of the name. E.g.: official, alternate,
+						brand, historical.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="language" type="xsd:string" maxOccurs="1"
+				minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The language of the name.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="acronym" type="xsd:string" maxOccurs="1"
+				minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The acronym form of the name.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="abbreviation" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The abbreviated form of the name.</xsd:documentation>
+				</xsd:annotation></xsd:element>
+			<xsd:element name="transliteration" type="xsd:string"
+				maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The transliteration of this name to another
+						script.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="phonetic" type="xsd:string" maxOccurs="1"
+				minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The phonetic transcription of this name.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="Address">
+		<xsd:annotation>
+			<xsd:documentation>A POI address.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="street" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Street name.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="number" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>House number.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="crossStreet" type="xsd:string" maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>Name of second street (for intersections).</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element name="crossStreetNumber" type="xsd:string" maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>Number of second street (for intersections).</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element name="linearReference" type="xsd:positiveInteger" maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>Distance (in meters) from the start of the street.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element name="postcode" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Postal code.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="locality" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>City or village.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="region" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>State or province.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="country" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Country name or code.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="concat" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Concatenated, unstructured address information.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="type" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The type of the address.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Media">
+		<xsd:annotation>
+			<xsd:documentation>A media object.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="url" type="xsd:anyURI" maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The URL of the media object.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+            <xsd:element name="mimeType" type="xsd:string" maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>The MIME type of the media object.</xsd:documentation>
+                </xsd:annotation>
+            </xsd:element>
+            <xsd:element name="dateCreated" type="xsd:dateTime" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The time when the media object was created.</xsd:documentation>
+				</xsd:annotation>
+            </xsd:element>
+            <xsd:element name="license" type="slipo:LicenseInfo" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>License information for the media object.</xsd:documentation>
+				</xsd:annotation>
+            </xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Rating">
+		<xsd:annotation>
+			<xsd:documentation>A rating value and scale.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="ratingSource" type="xsd:string"
+				maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						The source of the rating information.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="minLevel" type="xsd:double" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						The minimum level of this rating scale.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="maxLevel" type="xsd:double" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						The maximum level of this rating scale.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="level" type="xsd:double" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						The value of the rating.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="ratingCount" type="xsd:int" maxOccurs="1"
+				minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>The number of votes from which this rating score has been produced.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="LicenseInfo">
+		<xsd:annotation>
+			<xsd:documentation>License information.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="title" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>License title.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="url" type="xsd:anyURI" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>License URL.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="attribution" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Attribution information.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="TimeSlot">
+		<xsd:annotation>
+			<xsd:documentation>A time slot.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="startDayOfWeek" type="slipo:WeekDayEnum" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Start week day of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="endDayOfWeek" type="slipo:WeekDayEnum" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						End week day of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="startTime" type="xsd:time" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Start time of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="endTime" type="xsd:time" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						End time of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="startMonth" type="xsd:gMonth" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Start month of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="endMonth" type="xsd:gMonth" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						End month of this time slot.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="startDayOfMonth" type="xsd:gDay" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Start day of month.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="endDayOfMonth" type="xsd:gDay" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						End day of month.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="concat" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Concatenated, unstructured form of opening hours information.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="isOpen" type="xsd:boolean" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Whether this time slot indicates open or closed status.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="publicHolidays" type="xsd:boolean" maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>Specifies whether the POI is open or closed during public holidays.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AccuracyInfo">
+        <xsd:annotation>
+        	<xsd:documentation>Accuracy info for the POI's location.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+        	<xsd:element name="accuracyType" type="xsd:string" maxOccurs="1" minOccurs="1">
+        		<xsd:annotation>
+        			<xsd:documentation>The accuracy metric. E.g.: positional accuracy, geocoding accuracy.</xsd:documentation>
+        		</xsd:annotation>
+        	</xsd:element>
+        	<xsd:element name="accuracyValue" type="xsd:string" maxOccurs="1" minOccurs="1">
+                <xsd:annotation>
+                	<xsd:documentation>The value of the accuracy metric.</xsd:documentation>
+                </xsd:annotation>
+        	</xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:simpleType name="WeekDayEnum">
+        <xsd:annotation>
+        	<xsd:documentation>Enumeration of week days.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Mon"></xsd:enumeration>
+			<xsd:enumeration value="Tue"></xsd:enumeration>
+			<xsd:enumeration value="Wed"></xsd:enumeration>
+			<xsd:enumeration value="Thu"></xsd:enumeration>
+			<xsd:enumeration value="Fri"></xsd:enumeration>
+			<xsd:enumeration value="Sat"></xsd:enumeration>
+			<xsd:enumeration value="Sun"></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+
+	<xsd:complexType name="Service">
+		<xsd:annotation>
+			<xsd:documentation>A service.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="serviceType" type="xsd:string" maxOccurs="1" minOccurs="1">
+                <xsd:annotation>
+                	<xsd:documentation>The type of the service. E.g.: accessible, free-parking, closed-parking, valet-parking, drive-through, free-wifi, wifi, restrooms, reservations, outdoor, airconditioning, delivery.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+			<xsd:element name="isAvailable" type="xsd:boolean" maxOccurs="1" minOccurs="1">
+                <xsd:annotation>
+                	<xsd:documentation>Whether this service is offered by the POI.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="POISet">
+		<xsd:annotation>
+			<xsd:documentation>A set of POIs.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+            <xsd:element name="uri" type="xsd:anyURI" maxOccurs="1"
+            	minOccurs="1">
+            	<xsd:annotation>
+            		<xsd:documentation>A URI identifying the POI set.</xsd:documentation>
+            	</xsd:annotation>
+            </xsd:element>
+            <xsd:element name="title" type="xsd:string" maxOccurs="1"
+				minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The title of the POI set.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="dateCreated" type="xsd:dateTime"
+				maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The creation time of the POI set.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="poi" type="slipo:POI"
+				maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>A POI that belongs to this set.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="PaymentMethod">
+		<xsd:annotation>
+			<xsd:documentation>A payment method.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="paymentType" type="xsd:string" maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The type of the payment method. E.g.: cash, credit-card, debit-card, prepaid-card, bank-transfer, paypal, check, mobile.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="isAvailable" type="xsd:boolean" maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>Whether this payment method is accepted by the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="KeyValAttr">
+        <xsd:annotation>
+        	<xsd:documentation>Other attribute.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+        	<xsd:element name="key" type="xsd:string" maxOccurs="1" minOccurs="1">
+        		<xsd:annotation>
+        			<xsd:documentation>Attribute name.</xsd:documentation>
+        		</xsd:annotation>
+        	</xsd:element>
+        	<xsd:element name="value" type="xsd:string" maxOccurs="1" minOccurs="1">
+        		<xsd:annotation>
+        			<xsd:documentation>Attribute value.</xsd:documentation>
+        		</xsd:annotation></xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Contact">
+		<xsd:annotation>
+			<xsd:documentation>Contact information.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="contactType" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The type of the contact information.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="contactValue" type="xsd:string" maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The contact information itself.</xsd:documentation>
+				</xsd:annotation></xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Geometry">
+        <xsd:annotation>
+        	<xsd:documentation>A POI geometry.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence>
+        	<xsd:element name="geomType" type="xsd:string" maxOccurs="1" minOccurs="0">
+        		<xsd:annotation>
+        			<xsd:documentation>The kind of geometry. E.g.: center, map, navigation, shape.</xsd:documentation>
+        		</xsd:annotation>
+        	</xsd:element>
+        	<xsd:element name="geomWKT" type="xsd:string" maxOccurs="1" minOccurs="1">
+        		<xsd:annotation>
+        			<xsd:documentation>The POI's geometry, represented in WKT format.</xsd:documentation>
+        		</xsd:annotation></xsd:element>
+        </xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="POISource">
+		<xsd:annotation>
+			<xsd:documentation>A POI data source.</xsd:documentation>
+		</xsd:annotation>
+        <xsd:sequence>
+			<xsd:element name="uri" type="xsd:anyURI" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>A URI identifying the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="title" type="xsd:string" maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The name of the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="homepage" type="xsd:anyURI" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The URL of the official web page of the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="description" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>A description of the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="license" type="slipo:LicenseInfo" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>License information for the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="logo" type="xsd:anyURI" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>URL of the logo to be displayed for the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="rating" type="slipo:Rating" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>An overall quality rating of the source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Classification">
+		<xsd:annotation>
+			<xsd:documentation>A POI classification.</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+            <xsd:element name="uri" type="xsd:anyURI" maxOccurs="1"
+            	minOccurs="1">
+            	<xsd:annotation>
+            		<xsd:documentation>A URI identifying the classification scheme.</xsd:documentation>
+            	</xsd:annotation>
+            </xsd:element>
+            <xsd:element name="title" type="xsd:string" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The title of the classification scheme.</xsd:documentation>
+				</xsd:annotation>
+            </xsd:element>
+            <xsd:element name="term" type="slipo:Term"
+				maxOccurs="unbounded" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						A term of the classification.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="Term">
+		<xsd:annotation>
+			<xsd:documentation>
+				A term of a classification.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+            <xsd:element name="uri" type="xsd:anyURI" maxOccurs="1"
+            	minOccurs="1">
+            	<xsd:annotation>
+            		<xsd:documentation>A URI identifying the term.</xsd:documentation>
+            	</xsd:annotation>
+            </xsd:element>
+            <xsd:element name="value" type="xsd:string" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>The term.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+            <xsd:element name="parent" type="xsd:anyURI"
+            	maxOccurs="unbounded" minOccurs="0">
+            	<xsd:annotation>
+            		<xsd:documentation>
+            			A parent term.
+            		</xsd:documentation>
+            	</xsd:annotation>
+            </xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:element name="poiset" type="slipo:POISet"></xsd:element>
+
+	<xsd:element name="poisource" type="slipo:POISource"></xsd:element>
+
+	<xsd:element name="classification" type="slipo:Classification"></xsd:element>
+
+	<xsd:complexType name="SourceInfo">
+		<xsd:annotation>
+			<xsd:documentation>
+				Source information for the POI data.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:sequence>
+			<xsd:element name="sourceRef" type="xsd:anyURI"
+				maxOccurs="1" minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>
+						A URI identifying the POI source.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="poiRef" type="xsd:anyURI" maxOccurs="1"
+				minOccurs="1">
+				<xsd:annotation>
+					<xsd:documentation>A URI identifying the POI at the respective source.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="dateRetrieved" type="xsd:dateTime"
+				maxOccurs="1" minOccurs="0">
+                <xsd:annotation>
+                	<xsd:documentation>The time when the POI data was retrieved from the respective source.</xsd:documentation>
+                </xsd:annotation>
+			</xsd:element>
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

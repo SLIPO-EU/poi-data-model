@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://slipo.eu/def/ev/#"
+     xml:base="http://slipo.eu/def/ev/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:slipo="http://slipo.eu/def#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/SLIPO-EU/poi-data-model/master/poi-model.owl"/>
+        <rdfs:comment>Extension of SLIPO POI data model for Electric Vehicle (EV) Charging Stations.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+	
+
+    <!-- http://slipo.eu/def#EVChargingStation -->
+
+    <owl:Class rdf:about="http://slipo.eu/def#EVChargingStation">
+        <rdfs:label>EVChargingStation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:comment xml:lang="en">The class of a POI representing an Electric Vehicle (EV) Charging Station.</rdfs:comment>
+    </owl:Class>
+	
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://slipo.eu/def#EVvoltage -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVvoltage">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Max Voltage. E.g., 220.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://slipo.eu/def#EVamps -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVamps">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Max Current (Amps).</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	    <!-- http://slipo.eu/def#EVpowerKW -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVpowerKW">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">Max Power (kW).</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	
+    <!-- http://slipo.eu/def#EVaccessComments -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVaccessComments">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Accessibility information (sometimes includes opening hours).</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+    <!-- http://slipo.eu/def#EVnumberOfPoints -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVnumberOfPoints">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">Number of charge points available.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+	<!-- http://slipo.eu/def#EVquantity -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVquantity">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">Number of available connections.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://slipo.eu/def#EVisMembershipRequired -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVisMembershipRequired">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Whether membership is required to access the facility.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	
+	<!-- http://slipo.eu/def#EVlevel -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVlevel">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#positiveInteger"/>
+        <rdfs:comment xml:lang="en">Charging Level (low, medium, high).</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://slipo.eu/def#EVstatusType -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVstatusType">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The type of the EV charging station, e.g.: residential, public, portable.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	
+	<!-- http://slipo.eu/def#EVcurrentType -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVcurrentType">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Supply type (e.g., AC Single phase, AC three phase, DC).</rdfs:comment>
+    </owl:DatatypeProperty>	
+	
+	
+	<!-- http://slipo.eu/def#EVcurrentTypeDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVcurrentTypeDescription">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Full description of the supply type.</rdfs:comment>
+    </owl:DatatypeProperty>	
+	
+	
+	<!-- http://slipo.eu/def#EVconnectionType -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVconnectionType">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The type of connection according to relevant standards.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	
+	<!-- http://slipo.eu/def#EVconnectionFormalName -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVconnectionFormalName">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Name of the connection.</rdfs:comment>
+    </owl:DatatypeProperty>	
+	
+
+    <!-- http://slipo.eu/def#EVcomments -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVcomments">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Additional text information concerning other connection characteristics.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+	<!-- http://slipo.eu/def#EVisFastChargeCapable -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#EVisFastChargeCapable">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#EVChargingStation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Whether fast change capability is available.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>

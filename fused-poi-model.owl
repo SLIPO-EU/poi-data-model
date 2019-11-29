@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://slipo.eu/def/fusion/#"
+     xml:base="http://slipo.eu/def/fusion/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:slipo="http://slipo.eu/def#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	 xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/SLIPO-EU/poi-data-model/master/poi-model.owl"/>
+        <rdfs:comment>Extension of SLIPO data model for representing fused POIs and their provenance.</rdfs:comment>
+        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+    </owl:Ontology>
+	
+	
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	 
+    <!-- http://slipo.eu/def#fusedPOI -->
+
+    <owl:Class rdf:about="http://slipo.eu/def#fusedPOI">
+        <rdfs:label>fusedPOI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://slipo.eu/def#POI"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#fusion-confidence"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#fusion-gain"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class of a POI from two input resources and the actions applied to generate its properties.</rdfs:comment>
+    </owl:Class>
+	
+	
+	<!-- http://www.w3.org/ns/prov#appliedAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#appliedAgent">
+        <rdfs:label>appliedAgent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#attribute"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#fusion-action"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#left-value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#right-value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#fused-value"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class of an Agent representing provenance of a particular property (POI attribute) after a fusion action is applied.</rdfs:comment>
+    </owl:Class>
+
+	<!-- http://www.w3.org/ns/prov#derivedAgent -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/prov#derivedAgent">
+        <rdfs:label>derivedAgent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Agent"/>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#right-uri"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#default-fusion-action"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#validation-action"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>		
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#fusion-confidence"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The class of an Agent representing provenance of a fused POI.</rdfs:comment>
+    </owl:Class>
+	
+	
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+	
+    <!-- http://www.w3.org/ns/prov#appliedAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#appliedAction">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#fusedPOI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:comment xml:lang="en">Keeps track of the fusion action applied on values from two input POI resources regarding a specific attribute (e.g., fusing phone numbers).</rdfs:comment>
+    </owl:ObjectProperty>
+
+
+	<!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#fusedPOI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:comment xml:lang="en">Keeps track of the fusion applied on two input POI resources.</rdfs:comment>
+    </owl:ObjectProperty>
+	
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://www.w3.org/ns/prov#attribute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#attribute">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The property (attribute name) involved in the fusion action.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://www.w3.org/ns/prov#fusion-action -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#fusion-action">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The fusion action to be applied on the two input property values.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	<!-- http://www.w3.org/ns/prov#left-value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#left-value">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The value of the first POI (left part in the fusion action) on the examined property (attribute).</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://www.w3.org/ns/prov#right-value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#right-value">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The value of the second POI (right part in the fusion action) on the examined property (attribute).</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://www.w3.org/ns/prov#fused-value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#fused-value">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#appliedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The resulting value of the POI on the examined property (attribute) after fusion.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	<!-- http://www.w3.org/ns/prov#left-uri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#left-uri">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The URI of the first POI (left part) involved in the fusion.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://www.w3.org/ns/prov#right-uri -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#right-uri">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The URI of the second POI (right part) involved in the fusion.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+	<!-- http://www.w3.org/ns/prov#default-fusion-action -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#default-fusion-action">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The default fusion action (keep-left, keep-both, etc.) to be applied on the two input property values if no other specific action or condition is defined.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	<!-- http://www.w3.org/ns/prov#validation-action -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#validation-action">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The result of the validation rule (accept, reject, accept-mark-ambiguous, etc.) applied on the link between two input POI resources.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+    <!-- http://www.w3.org/ns/prov#fusion-confidence -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/prov#fusion-confidence">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#derivedAgent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The confidence measure of the applied fusion over the two input POI resources.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	
+    <!-- http://slipo.eu/def#fusion-gain -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#fusion-gain">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#fusedPOI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Fusion attribute gain.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+    <!-- http://slipo.eu/def#fusion-confidence -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#fusion-confidence">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#fusedPOI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Fusion confidence.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>

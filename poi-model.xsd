@@ -60,6 +60,11 @@
 					</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
+			<xsd:element name="assignedCategory" type="slipo:AssignedCategoryEnum" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>Specifies an internal category assigned to each POI according to a default (embedded) classification scheme used internally in SLIPO.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
 			<xsd:element name="tag" type="xsd:string" maxOccurs="unbounded" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>A tag assigned to the POI.</xsd:documentation>
@@ -94,6 +99,11 @@
 			<xsd:element name="media" type="slipo:Media" maxOccurs="unbounded" minOccurs="0">
 				<xsd:annotation>
 					<xsd:documentation>A media object associated with the POI.</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="operator" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>The name of the POI's operator, such as the company name, the person running the business, etc.</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
 			<xsd:element name="priceTier" type="slipo:Rating" maxOccurs="unbounded" minOccurs="0">
@@ -163,6 +173,27 @@
 				<xsd:annotation>
 					<xsd:documentation>
 						The altitude of the POI's location.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="area" type="xsd:double" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The area of the POI's geometry. This is only valid for POI entities represented with a surface (e.g., a polygon or multipolygon). By default, the area value is expressed in square meters.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="length" type="xsd:double" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						The length of the POI's geometry. This is only valid for POI entities represented as lines or surfaces (e.g., a polygon or multipolygon); in the latter case, it represents the perimeter of the surface. By default, the length value is expressed in meters.
+					</xsd:documentation>
+				</xsd:annotation>
+			</xsd:element>
+			<xsd:element name="geoHash" type="xsd:string" maxOccurs="1" minOccurs="0">
+				<xsd:annotation>
+					<xsd:documentation>
+						Encodes the geographic location of the POI into a short string of letters and digits. By default, a string length (precision) of 8 is used in SLIPO; length values outside of [1,12] are rejected.
 					</xsd:documentation>
 				</xsd:annotation>
 			</xsd:element>
@@ -519,6 +550,28 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 
+	<xsd:simpleType name="AssignedCategoryEnum">
+        <xsd:annotation>
+        	<xsd:documentation>Enumeration of automatically assigned categories as used internally in SLIPO.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:restriction base="xsd:string">
+			<xsd:enumeration value="ACCOMMODATION"></xsd:enumeration>
+			<xsd:enumeration value="AUTOMOTIVE"></xsd:enumeration>
+			<xsd:enumeration value="BUSINESS"></xsd:enumeration>
+			<xsd:enumeration value="EAT/DRINK"></xsd:enumeration>
+			<xsd:enumeration value="EDUCATION"></xsd:enumeration>
+			<xsd:enumeration value="HEALTH"></xsd:enumeration>
+			<xsd:enumeration value="LANDUSE"></xsd:enumeration>
+			<xsd:enumeration value="PUBLIC SERVICE"></xsd:enumeration>
+			<xsd:enumeration value="RELIGIOUS"></xsd:enumeration>
+			<xsd:enumeration value="SETTLEMENTS"></xsd:enumeration>
+			<xsd:enumeration value="SHOP"></xsd:enumeration>
+			<xsd:enumeration value="SPORT"></xsd:enumeration>
+			<xsd:enumeration value="TOURISM"></xsd:enumeration>
+			<xsd:enumeration value="TRANSPORT"></xsd:enumeration>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
 	<xsd:complexType name="Service">
 		<xsd:annotation>
 			<xsd:documentation>A service.</xsd:documentation>

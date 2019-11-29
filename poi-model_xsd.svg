@@ -1015,15 +1015,15 @@ onmouseover='makeVisible("_1_3_1_4_1_8")' onmouseout='makeHidden("_1_3_1_4_1_8")
 </g>
 
 <g id='_1_3_1_4_1_9' class='box' transform='translate(686,2677)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
+<rect class='shadow' x='3' y='3' width='171' height='46'/>
+<rect class='boxelement' x='0' y='0' width='171' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_9")' onmouseout='makeHidden("_1_3_1_4_1_9")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>tag</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..∞</text>
+<text class='strong' x='5' y='27'>assignedCategory</text>
+<text class='visible' x='5' y='41'>type: AssignedCategoryEnum</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
@@ -1034,185 +1034,27 @@ onmouseover='makeVisible("_1_3_1_4_1_10")' onmouseout='makeHidden("_1_3_1_4_1_10
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>address</text>
-<text class='visible' x='5' y='41'>type: Address</text>
+<text class='strong' x='5' y='27'>tag</text>
+<text class='visible' x='5' y='41'>type: string</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_10' onclick='show("_1_3_1_4_1_10")'/>
 </g>
 
-<g id='_1_3_1_4_1_10_1' class='box' transform='translate(860,2748)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_10_1' onclick='show("_1_3_1_4_1_10_1")'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_1' class='box' transform='translate(965,2748)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_1")' onmouseout='makeHidden("_1_3_1_4_1_10_1_1")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>street</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_2' class='box' transform='translate(965,2819)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_2")' onmouseout='makeHidden("_1_3_1_4_1_10_1_2")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>number</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_3' class='box' transform='translate(965,2890)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_3")' onmouseout='makeHidden("_1_3_1_4_1_10_1_3")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>crossStreet</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_4' class='box' transform='translate(965,2961)'>
-<rect class='shadow' x='3' y='3' width='135' height='46'/>
-<rect class='boxelement' x='0' y='0' width='135' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_4")' onmouseout='makeHidden("_1_3_1_4_1_10_1_4")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>crossStreetNumber</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_5' class='box' transform='translate(965,3032)'>
-<rect class='shadow' x='3' y='3' width='141' height='46'/>
-<rect class='boxelement' x='0' y='0' width='141' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_5")' onmouseout='makeHidden("_1_3_1_4_1_10_1_5")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>linearReference</text>
-<text class='visible' x='5' y='41'>type: positiveInteger</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_6' class='box' transform='translate(965,3103)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_6")' onmouseout='makeHidden("_1_3_1_4_1_10_1_6")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>postcode</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_7' class='box' transform='translate(965,3174)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_7")' onmouseout='makeHidden("_1_3_1_4_1_10_1_7")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>locality</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_8' class='box' transform='translate(965,3245)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_8")' onmouseout='makeHidden("_1_3_1_4_1_10_1_8")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>region</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_9' class='box' transform='translate(965,3316)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_9")' onmouseout='makeHidden("_1_3_1_4_1_10_1_9")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>country</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_10' class='box' transform='translate(965,3387)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_10")' onmouseout='makeHidden("_1_3_1_4_1_10_1_10")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>concat</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_10_1_11' class='box' transform='translate(965,3458)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_10_1_11")' onmouseout='makeHidden("_1_3_1_4_1_10_1_11")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>type</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_10_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_3_1_4_1_11' class='box' transform='translate(686,3529)'>
+<g id='_1_3_1_4_1_11' class='box' transform='translate(686,2819)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_11")' onmouseout='makeHidden("_1_3_1_4_1_11")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>phone</text>
-<text class='visible' x='5' y='41'>type: Contact</text>
+<text class='strong' x='5' y='27'>address</text>
+<text class='visible' x='5' y='41'>type: Address</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_11' onclick='show("_1_3_1_4_1_11")'/>
 </g>
 
-<g id='_1_3_1_4_1_11_1' class='box' transform='translate(860,3529)'>
+<g id='_1_3_1_4_1_11_1' class='box' transform='translate(860,2819)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1225,47 +1067,165 @@ onmouseover='makeVisible("_1_3_1_4_1_11")' onmouseout='makeHidden("_1_3_1_4_1_11
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_11_1' onclick='show("_1_3_1_4_1_11_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_11_1_1' class='box' transform='translate(965,3529)'>
+<g id='_1_3_1_4_1_11_1_1' class='box' transform='translate(965,2819)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_11_1_1")' onmouseout='makeHidden("_1_3_1_4_1_11_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>contactType</text>
+<text class='strong' x='5' y='27'>street</text>
 <text class='visible' x='5' y='41'>type: string</text>
 <text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_11_1_2' class='box' transform='translate(965,3600)'>
+<g id='_1_3_1_4_1_11_1_2' class='box' transform='translate(965,2890)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_11_1_2")' onmouseout='makeHidden("_1_3_1_4_1_11_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>contactValue</text>
+<text class='strong' x='5' y='27'>number</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_3_1_4_1_11_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_3' class='box' transform='translate(965,2961)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_3")' onmouseout='makeHidden("_1_3_1_4_1_11_1_3")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>crossStreet</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_4' class='box' transform='translate(965,3032)'>
+<rect class='shadow' x='3' y='3' width='135' height='46'/>
+<rect class='boxelement' x='0' y='0' width='135' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_4")' onmouseout='makeHidden("_1_3_1_4_1_11_1_4")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>crossStreetNumber</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_5' class='box' transform='translate(965,3103)'>
+<rect class='shadow' x='3' y='3' width='141' height='46'/>
+<rect class='boxelement' x='0' y='0' width='141' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_5")' onmouseout='makeHidden("_1_3_1_4_1_11_1_5")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>linearReference</text>
+<text class='visible' x='5' y='41'>type: positiveInteger</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_6' class='box' transform='translate(965,3174)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_6")' onmouseout='makeHidden("_1_3_1_4_1_11_1_6")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>postcode</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_7' class='box' transform='translate(965,3245)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_7")' onmouseout='makeHidden("_1_3_1_4_1_11_1_7")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>locality</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_8' class='box' transform='translate(965,3316)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_8")' onmouseout='makeHidden("_1_3_1_4_1_11_1_8")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>region</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_9' class='box' transform='translate(965,3387)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_9")' onmouseout='makeHidden("_1_3_1_4_1_11_1_9")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>country</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_10' class='box' transform='translate(965,3458)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_10")' onmouseout='makeHidden("_1_3_1_4_1_11_1_10")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>concat</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_11_1_11' class='box' transform='translate(965,3529)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_11_1_11")' onmouseout='makeHidden("_1_3_1_4_1_11_1_11")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>type</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' id='p_1_3_1_4_1_11_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_12' class='box' transform='translate(686,3671)'>
+<g id='_1_3_1_4_1_12' class='box' transform='translate(686,3600)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_12")' onmouseout='makeHidden("_1_3_1_4_1_12")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>email</text>
+<text class='strong' x='5' y='27'>phone</text>
 <text class='visible' x='5' y='41'>type: Contact</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_12' onclick='show("_1_3_1_4_1_12")'/>
 </g>
 
-<g id='_1_3_1_4_1_12_1' class='box' transform='translate(860,3671)'>
+<g id='_1_3_1_4_1_12_1' class='box' transform='translate(860,3600)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1278,7 +1238,7 @@ onmouseover='makeVisible("_1_3_1_4_1_12")' onmouseout='makeHidden("_1_3_1_4_1_12
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_12_1' onclick='show("_1_3_1_4_1_12_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_12_1_1' class='box' transform='translate(965,3671)'>
+<g id='_1_3_1_4_1_12_1_1' class='box' transform='translate(965,3600)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_12_1_1")' onmouseout='makeHidden("_1_3_1_4_1_12_1_1")'/>
@@ -1291,7 +1251,7 @@ onmouseover='makeVisible("_1_3_1_4_1_12_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_12_1_2' class='box' transform='translate(965,3742)'>
+<g id='_1_3_1_4_1_12_1_2' class='box' transform='translate(965,3671)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_12_1_2")' onmouseout='makeHidden("_1_3_1_4_1_12_1_2")'/>
@@ -1304,21 +1264,21 @@ onmouseover='makeVisible("_1_3_1_4_1_12_1_2")' onmouseout='makeHidden("_1_3_1_4_
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_13' class='box' transform='translate(686,3813)'>
+<g id='_1_3_1_4_1_13' class='box' transform='translate(686,3742)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_13")' onmouseout='makeHidden("_1_3_1_4_1_13")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>fax</text>
+<text class='strong' x='5' y='27'>email</text>
 <text class='visible' x='5' y='41'>type: Contact</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_13' onclick='show("_1_3_1_4_1_13")'/>
 </g>
 
-<g id='_1_3_1_4_1_13_1' class='box' transform='translate(860,3813)'>
+<g id='_1_3_1_4_1_13_1' class='box' transform='translate(860,3742)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1331,7 +1291,7 @@ onmouseover='makeVisible("_1_3_1_4_1_13")' onmouseout='makeHidden("_1_3_1_4_1_13
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_13_1' onclick='show("_1_3_1_4_1_13_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_13_1_1' class='box' transform='translate(965,3813)'>
+<g id='_1_3_1_4_1_13_1_1' class='box' transform='translate(965,3742)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_13_1_1")' onmouseout='makeHidden("_1_3_1_4_1_13_1_1")'/>
@@ -1344,7 +1304,7 @@ onmouseover='makeVisible("_1_3_1_4_1_13_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_13_1_2' class='box' transform='translate(965,3884)'>
+<g id='_1_3_1_4_1_13_1_2' class='box' transform='translate(965,3813)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_13_1_2")' onmouseout='makeHidden("_1_3_1_4_1_13_1_2")'/>
@@ -1357,21 +1317,21 @@ onmouseover='makeVisible("_1_3_1_4_1_13_1_2")' onmouseout='makeHidden("_1_3_1_4_
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_14' class='box' transform='translate(686,3955)'>
+<g id='_1_3_1_4_1_14' class='box' transform='translate(686,3884)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_14")' onmouseout='makeHidden("_1_3_1_4_1_14")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>media</text>
-<text class='visible' x='5' y='41'>type: Media</text>
+<text class='strong' x='5' y='27'>fax</text>
+<text class='visible' x='5' y='41'>type: Contact</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_14' onclick='show("_1_3_1_4_1_14")'/>
 </g>
 
-<g id='_1_3_1_4_1_14_1' class='box' transform='translate(860,3955)'>
+<g id='_1_3_1_4_1_14_1' class='box' transform='translate(860,3884)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1384,127 +1344,47 @@ onmouseover='makeVisible("_1_3_1_4_1_14")' onmouseout='makeHidden("_1_3_1_4_1_14
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_14_1' onclick='show("_1_3_1_4_1_14_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_14_1_1' class='box' transform='translate(965,3955)'>
+<g id='_1_3_1_4_1_14_1_1' class='box' transform='translate(965,3884)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_14_1_1")' onmouseout='makeHidden("_1_3_1_4_1_14_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>url</text>
-<text class='visible' x='5' y='41'>type: anyURI</text>
+<text class='strong' x='5' y='27'>contactType</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_14_1_2' class='box' transform='translate(965,4026)'>
+<g id='_1_3_1_4_1_14_1_2' class='box' transform='translate(965,3955)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_14_1_2")' onmouseout='makeHidden("_1_3_1_4_1_14_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>mimeType</text>
+<text class='strong' x='5' y='27'>contactValue</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_3' class='box' transform='translate(965,4097)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_14_1_3")' onmouseout='makeHidden("_1_3_1_4_1_14_1_3")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>dateCreated</text>
-<text class='visible' x='5' y='41'>type: dateTime</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_4' class='box' transform='translate(965,4168)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_14_1_4")' onmouseout='makeHidden("_1_3_1_4_1_14_1_4")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>license</text>
-<text class='visible' x='5' y='41'>type: LicenseInfo</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_14_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_14_1_4' onclick='show("_1_3_1_4_1_14_1_4")'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_4_1' class='box' transform='translate(1139,4168)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_14_1_4_1' onclick='show("_1_3_1_4_1_14_1_4_1")'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_4_1_1' class='box' transform='translate(1244,4168)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_14_1_4_1_1")' onmouseout='makeHidden("_1_3_1_4_1_14_1_4_1_1")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>title</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_4_1_2' class='box' transform='translate(1244,4239)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_14_1_4_1_2")' onmouseout='makeHidden("_1_3_1_4_1_14_1_4_1_2")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>url</text>
-<text class='visible' x='5' y='41'>type: anyURI</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_14_1_4_1_3' class='box' transform='translate(1244,4310)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_14_1_4_1_3")' onmouseout='makeHidden("_1_3_1_4_1_14_1_4_1_3")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>attribution</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_14_1_4_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_14_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_15' class='box' transform='translate(686,4381)'>
+<g id='_1_3_1_4_1_15' class='box' transform='translate(686,4026)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_15")' onmouseout='makeHidden("_1_3_1_4_1_15")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>priceTier</text>
-<text class='visible' x='5' y='41'>type: Rating</text>
+<text class='strong' x='5' y='27'>media</text>
+<text class='visible' x='5' y='41'>type: Media</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_15' onclick='show("_1_3_1_4_1_15")'/>
 </g>
 
-<g id='_1_3_1_4_1_15_1' class='box' transform='translate(860,4381)'>
+<g id='_1_3_1_4_1_15_1' class='box' transform='translate(860,4026)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1517,83 +1397,60 @@ onmouseover='makeVisible("_1_3_1_4_1_15")' onmouseout='makeHidden("_1_3_1_4_1_15
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_15_1' onclick='show("_1_3_1_4_1_15_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_15_1_1' class='box' transform='translate(965,4381)'>
+<g id='_1_3_1_4_1_15_1_1' class='box' transform='translate(965,4026)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_15_1_1")' onmouseout='makeHidden("_1_3_1_4_1_15_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ratingSource</text>
-<text class='visible' x='5' y='41'>type: string</text>
+<text class='strong' x='5' y='27'>url</text>
+<text class='visible' x='5' y='41'>type: anyURI</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_15_1_2' class='box' transform='translate(965,4452)'>
+<g id='_1_3_1_4_1_15_1_2' class='box' transform='translate(965,4097)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_15_1_2")' onmouseout='makeHidden("_1_3_1_4_1_15_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>minLevel</text>
-<text class='visible' x='5' y='41'>type: double</text>
+<text class='strong' x='5' y='27'>mimeType</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_15_1_3' class='box' transform='translate(965,4523)'>
+<g id='_1_3_1_4_1_15_1_3' class='box' transform='translate(965,4168)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_15_1_3")' onmouseout='makeHidden("_1_3_1_4_1_15_1_3")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>maxLevel</text>
-<text class='visible' x='5' y='41'>type: double</text>
+<text class='strong' x='5' y='27'>dateCreated</text>
+<text class='visible' x='5' y='41'>type: dateTime</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_15_1_4' class='box' transform='translate(965,4594)'>
+<g id='_1_3_1_4_1_15_1_4' class='box' transform='translate(965,4239)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_15_1_4")' onmouseout='makeHidden("_1_3_1_4_1_15_1_4")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>level</text>
-<text class='visible' x='5' y='41'>type: double</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_15_1_5' class='box' transform='translate(965,4665)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_15_1_5")' onmouseout='makeHidden("_1_3_1_4_1_15_1_5")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>ratingCount</text>
-<text class='visible' x='5' y='41'>type: int</text>
+<text class='strong' x='5' y='27'>license</text>
+<text class='visible' x='5' y='41'>type: LicenseInfo</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_15_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_15_1_4' x1='-35' y1='-190' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_15_1_4' onclick='show("_1_3_1_4_1_15_1_4")'/>
 </g>
 
-<g id='_1_3_1_4_1_16' class='box' transform='translate(686,4736)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16")' onmouseout='makeHidden("_1_3_1_4_1_16")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>rating</text>
-<text class='visible' x='5' y='41'>type: Rating</text>
-<text x='5' y='59'>0..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_16' onclick='show("_1_3_1_4_1_16")'/>
-</g>
-
-<g id='_1_3_1_4_1_16_1' class='box' transform='translate(860,4736)'>
+<g id='_1_3_1_4_1_15_1_4_1' class='box' transform='translate(1139,4239)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -1603,13 +1460,93 @@ onmouseover='makeVisible("_1_3_1_4_1_16")' onmouseout='makeHidden("_1_3_1_4_1_16
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_16_1' onclick='show("_1_3_1_4_1_16_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_15_1_4_1' onclick='show("_1_3_1_4_1_15_1_4_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_16_1_1' class='box' transform='translate(965,4736)'>
+<g id='_1_3_1_4_1_15_1_4_1_1' class='box' transform='translate(1244,4239)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16_1_1")' onmouseout='makeHidden("_1_3_1_4_1_16_1_1")'/>
+onmouseover='makeVisible("_1_3_1_4_1_15_1_4_1_1")' onmouseout='makeHidden("_1_3_1_4_1_15_1_4_1_1")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>title</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_15_1_4_1_2' class='box' transform='translate(1244,4310)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_15_1_4_1_2")' onmouseout='makeHidden("_1_3_1_4_1_15_1_4_1_2")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>url</text>
+<text class='visible' x='5' y='41'>type: anyURI</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_15_1_4_1_3' class='box' transform='translate(1244,4381)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_15_1_4_1_3")' onmouseout='makeHidden("_1_3_1_4_1_15_1_4_1_3")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>attribution</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' id='p_1_3_1_4_1_15_1_4_1_3' x1='-35' y1='-119' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+</g>
+
+<g id='_1_3_1_4_1_16' class='box' transform='translate(686,4452)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_16")' onmouseout='makeHidden("_1_3_1_4_1_16")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>operator</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_17' class='box' transform='translate(686,4523)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_17")' onmouseout='makeHidden("_1_3_1_4_1_17")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>priceTier</text>
+<text class='visible' x='5' y='41'>type: Rating</text>
+<text x='5' y='59'>0..∞</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_17' onclick='show("_1_3_1_4_1_17")'/>
+</g>
+
+<g id='_1_3_1_4_1_17_1' class='box' transform='translate(860,4523)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_17_1' onclick='show("_1_3_1_4_1_17_1")'/>
+</g>
+
+<g id='_1_3_1_4_1_17_1_1' class='box' transform='translate(965,4523)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_17_1_1")' onmouseout='makeHidden("_1_3_1_4_1_17_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -1618,10 +1555,10 @@ onmouseover='makeVisible("_1_3_1_4_1_16_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_16_1_2' class='box' transform='translate(965,4807)'>
+<g id='_1_3_1_4_1_17_1_2' class='box' transform='translate(965,4594)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16_1_2")' onmouseout='makeHidden("_1_3_1_4_1_16_1_2")'/>
+onmouseover='makeVisible("_1_3_1_4_1_17_1_2")' onmouseout='makeHidden("_1_3_1_4_1_17_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -1630,10 +1567,10 @@ onmouseover='makeVisible("_1_3_1_4_1_16_1_2")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_16_1_3' class='box' transform='translate(965,4878)'>
+<g id='_1_3_1_4_1_17_1_3' class='box' transform='translate(965,4665)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16_1_3")' onmouseout='makeHidden("_1_3_1_4_1_16_1_3")'/>
+onmouseover='makeVisible("_1_3_1_4_1_17_1_3")' onmouseout='makeHidden("_1_3_1_4_1_17_1_3")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -1642,10 +1579,10 @@ onmouseover='makeVisible("_1_3_1_4_1_16_1_3")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_16_1_4' class='box' transform='translate(965,4949)'>
+<g id='_1_3_1_4_1_17_1_4' class='box' transform='translate(965,4736)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16_1_4")' onmouseout='makeHidden("_1_3_1_4_1_16_1_4")'/>
+onmouseover='makeVisible("_1_3_1_4_1_17_1_4")' onmouseout='makeHidden("_1_3_1_4_1_17_1_4")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -1654,44 +1591,107 @@ onmouseover='makeVisible("_1_3_1_4_1_16_1_4")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_16_1_5' class='box' transform='translate(965,5020)'>
+<g id='_1_3_1_4_1_17_1_5' class='box' transform='translate(965,4807)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_16_1_5")' onmouseout='makeHidden("_1_3_1_4_1_16_1_5")'/>
+onmouseover='makeVisible("_1_3_1_4_1_17_1_5")' onmouseout='makeHidden("_1_3_1_4_1_17_1_5")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>ratingCount</text>
 <text class='visible' x='5' y='41'>type: int</text>
 <text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_16_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_17_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_17' class='box' transform='translate(686,5091)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_17")' onmouseout='makeHidden("_1_3_1_4_1_17")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>validFrom</text>
-<text class='visible' x='5' y='41'>type: dateTime</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_18' class='box' transform='translate(686,5162)'>
+<g id='_1_3_1_4_1_18' class='box' transform='translate(686,4878)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_18")' onmouseout='makeHidden("_1_3_1_4_1_18")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>validTo</text>
-<text class='visible' x='5' y='41'>type: dateTime</text>
-<text x='5' y='59'>0..1</text>
+<text class='strong' x='5' y='27'>rating</text>
+<text class='visible' x='5' y='41'>type: Rating</text>
+<text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_18' onclick='show("_1_3_1_4_1_18")'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1' class='box' transform='translate(860,4878)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_18_1' onclick='show("_1_3_1_4_1_18_1")'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1_1' class='box' transform='translate(965,4878)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_18_1_1")' onmouseout='makeHidden("_1_3_1_4_1_18_1_1")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>ratingSource</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1_2' class='box' transform='translate(965,4949)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_18_1_2")' onmouseout='makeHidden("_1_3_1_4_1_18_1_2")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>minLevel</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1_3' class='box' transform='translate(965,5020)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_18_1_3")' onmouseout='makeHidden("_1_3_1_4_1_18_1_3")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>maxLevel</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1_4' class='box' transform='translate(965,5091)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_18_1_4")' onmouseout='makeHidden("_1_3_1_4_1_18_1_4")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>level</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_18_1_5' class='box' transform='translate(965,5162)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_18_1_5")' onmouseout='makeHidden("_1_3_1_4_1_18_1_5")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>ratingCount</text>
+<text class='visible' x='5' y='41'>type: int</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' id='p_1_3_1_4_1_18_1_5' x1='-35' y1='-261' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
 <g id='_1_3_1_4_1_19' class='box' transform='translate(686,5233)'>
@@ -1701,7 +1701,7 @@ onmouseover='makeVisible("_1_3_1_4_1_19")' onmouseout='makeHidden("_1_3_1_4_1_19
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>lastUpdated</text>
+<text class='strong' x='5' y='27'>validFrom</text>
 <text class='visible' x='5' y='41'>type: dateTime</text>
 <text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -1714,356 +1714,40 @@ onmouseover='makeVisible("_1_3_1_4_1_20")' onmouseout='makeHidden("_1_3_1_4_1_20
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>openingHours</text>
-<text class='visible' x='5' y='41'>type: TimeSlot</text>
-<text x='5' y='59'>0..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_20' onclick='show("_1_3_1_4_1_20")'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1' class='box' transform='translate(860,5304)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_20_1' onclick='show("_1_3_1_4_1_20_1")'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_1' class='box' transform='translate(965,5304)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_1")' onmouseout='makeHidden("_1_3_1_4_1_20_1_1")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startDayOfWeek</text>
-<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text class='strong' x='5' y='27'>validTo</text>
+<text class='visible' x='5' y='41'>type: dateTime</text>
 <text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_20_1_2' class='box' transform='translate(965,5375)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_2")' onmouseout='makeHidden("_1_3_1_4_1_20_1_2")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endDayOfWeek</text>
-<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_3' class='box' transform='translate(965,5446)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_3")' onmouseout='makeHidden("_1_3_1_4_1_20_1_3")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startTime</text>
-<text class='visible' x='5' y='41'>type: time</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_4' class='box' transform='translate(965,5517)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_4")' onmouseout='makeHidden("_1_3_1_4_1_20_1_4")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endTime</text>
-<text class='visible' x='5' y='41'>type: time</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_5' class='box' transform='translate(965,5588)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_5")' onmouseout='makeHidden("_1_3_1_4_1_20_1_5")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startMonth</text>
-<text class='visible' x='5' y='41'>type: gMonth</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_6' class='box' transform='translate(965,5659)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_6")' onmouseout='makeHidden("_1_3_1_4_1_20_1_6")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endMonth</text>
-<text class='visible' x='5' y='41'>type: gMonth</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_7' class='box' transform='translate(965,5730)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_7")' onmouseout='makeHidden("_1_3_1_4_1_20_1_7")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startDayOfMonth</text>
-<text class='visible' x='5' y='41'>type: gDay</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_8' class='box' transform='translate(965,5801)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_8")' onmouseout='makeHidden("_1_3_1_4_1_20_1_8")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endDayOfMonth</text>
-<text class='visible' x='5' y='41'>type: gDay</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_9' class='box' transform='translate(965,5872)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_9")' onmouseout='makeHidden("_1_3_1_4_1_20_1_9")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>concat</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_10' class='box' transform='translate(965,5943)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_10")' onmouseout='makeHidden("_1_3_1_4_1_20_1_10")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>isOpen</text>
-<text class='visible' x='5' y='41'>type: boolean</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_20_1_11' class='box' transform='translate(965,6014)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_20_1_11")' onmouseout='makeHidden("_1_3_1_4_1_20_1_11")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>publicHolidays</text>
-<text class='visible' x='5' y='41'>type: boolean</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_20_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_3_1_4_1_21' class='box' transform='translate(686,6085)'>
+<g id='_1_3_1_4_1_21' class='box' transform='translate(686,5375)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_21")' onmouseout='makeHidden("_1_3_1_4_1_21")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>popularHours</text>
-<text class='visible' x='5' y='41'>type: TimeSlot</text>
-<text x='5' y='59'>0..∞</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_21' onclick='show("_1_3_1_4_1_21")'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1' class='box' transform='translate(860,6085)'>
-<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
-<circle cx='42' cy='14' r='2'/>
-<circle cx='42' cy='23' r='2'/>
-<circle cx='42' cy='32' r='2'/>
-<text class='small' x='30' y='17'>1</text>
-<text class='small' x='30' y='26'>2</text>
-<text class='small' x='30' y='35'>3</text>
-<line x1='42' y1='14' x2='42' y2='32'/>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_21_1' onclick='show("_1_3_1_4_1_21_1")'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_1' class='box' transform='translate(965,6085)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_1")' onmouseout='makeHidden("_1_3_1_4_1_21_1_1")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startDayOfWeek</text>
-<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text class='strong' x='5' y='27'>lastUpdated</text>
+<text class='visible' x='5' y='41'>type: dateTime</text>
 <text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_21_1_2' class='box' transform='translate(965,6156)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_2")' onmouseout='makeHidden("_1_3_1_4_1_21_1_2")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endDayOfWeek</text>
-<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_3' class='box' transform='translate(965,6227)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_3")' onmouseout='makeHidden("_1_3_1_4_1_21_1_3")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startTime</text>
-<text class='visible' x='5' y='41'>type: time</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_4' class='box' transform='translate(965,6298)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_4")' onmouseout='makeHidden("_1_3_1_4_1_21_1_4")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endTime</text>
-<text class='visible' x='5' y='41'>type: time</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_5' class='box' transform='translate(965,6369)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_5")' onmouseout='makeHidden("_1_3_1_4_1_21_1_5")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startMonth</text>
-<text class='visible' x='5' y='41'>type: gMonth</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_6' class='box' transform='translate(965,6440)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_6")' onmouseout='makeHidden("_1_3_1_4_1_21_1_6")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endMonth</text>
-<text class='visible' x='5' y='41'>type: gMonth</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_7' class='box' transform='translate(965,6511)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_7")' onmouseout='makeHidden("_1_3_1_4_1_21_1_7")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>startDayOfMonth</text>
-<text class='visible' x='5' y='41'>type: gDay</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_8' class='box' transform='translate(965,6582)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_8")' onmouseout='makeHidden("_1_3_1_4_1_21_1_8")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>endDayOfMonth</text>
-<text class='visible' x='5' y='41'>type: gDay</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_9' class='box' transform='translate(965,6653)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_9")' onmouseout='makeHidden("_1_3_1_4_1_21_1_9")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>concat</text>
-<text class='visible' x='5' y='41'>type: string</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_10' class='box' transform='translate(965,6724)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_10")' onmouseout='makeHidden("_1_3_1_4_1_21_1_10")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>isOpen</text>
-<text class='visible' x='5' y='41'>type: boolean</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_21_1_11' class='box' transform='translate(965,6795)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_21_1_11")' onmouseout='makeHidden("_1_3_1_4_1_21_1_11")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>publicHolidays</text>
-<text class='visible' x='5' y='41'>type: boolean</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' id='p_1_3_1_4_1_21_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
-<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_3_1_4_1_22' class='box' transform='translate(686,6866)'>
+<g id='_1_3_1_4_1_22' class='box' transform='translate(686,5446)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_22")' onmouseout='makeHidden("_1_3_1_4_1_22")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>service</text>
-<text class='visible' x='5' y='41'>type: Service</text>
+<text class='strong' x='5' y='27'>openingHours</text>
+<text class='visible' x='5' y='41'>type: TimeSlot</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_22' onclick='show("_1_3_1_4_1_22")'/>
 </g>
 
-<g id='_1_3_1_4_1_22_1' class='box' transform='translate(860,6866)'>
+<g id='_1_3_1_4_1_22_1' class='box' transform='translate(860,5446)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -2076,46 +1760,165 @@ onmouseover='makeVisible("_1_3_1_4_1_22")' onmouseout='makeHidden("_1_3_1_4_1_22
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_22_1' onclick='show("_1_3_1_4_1_22_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_22_1_1' class='box' transform='translate(965,6866)'>
+<g id='_1_3_1_4_1_22_1_1' class='box' transform='translate(965,5446)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_22_1_1")' onmouseout='makeHidden("_1_3_1_4_1_22_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>serviceType</text>
-<text class='visible' x='5' y='41'>type: string</text>
+<text class='strong' x='5' y='27'>startDayOfWeek</text>
+<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_22_1_2' class='box' transform='translate(965,6937)'>
+<g id='_1_3_1_4_1_22_1_2' class='box' transform='translate(965,5517)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_22_1_2")' onmouseout='makeHidden("_1_3_1_4_1_22_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>isAvailable</text>
+<text class='strong' x='5' y='27'>endDayOfWeek</text>
+<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_3' class='box' transform='translate(965,5588)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_3")' onmouseout='makeHidden("_1_3_1_4_1_22_1_3")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startTime</text>
+<text class='visible' x='5' y='41'>type: time</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_4' class='box' transform='translate(965,5659)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_4")' onmouseout='makeHidden("_1_3_1_4_1_22_1_4")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endTime</text>
+<text class='visible' x='5' y='41'>type: time</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_5' class='box' transform='translate(965,5730)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_5")' onmouseout='makeHidden("_1_3_1_4_1_22_1_5")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startMonth</text>
+<text class='visible' x='5' y='41'>type: gMonth</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_6' class='box' transform='translate(965,5801)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_6")' onmouseout='makeHidden("_1_3_1_4_1_22_1_6")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endMonth</text>
+<text class='visible' x='5' y='41'>type: gMonth</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_7' class='box' transform='translate(965,5872)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_7")' onmouseout='makeHidden("_1_3_1_4_1_22_1_7")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startDayOfMonth</text>
+<text class='visible' x='5' y='41'>type: gDay</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_8' class='box' transform='translate(965,5943)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_8")' onmouseout='makeHidden("_1_3_1_4_1_22_1_8")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endDayOfMonth</text>
+<text class='visible' x='5' y='41'>type: gDay</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_9' class='box' transform='translate(965,6014)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_9")' onmouseout='makeHidden("_1_3_1_4_1_22_1_9")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>concat</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_10' class='box' transform='translate(965,6085)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_10")' onmouseout='makeHidden("_1_3_1_4_1_22_1_10")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>isOpen</text>
 <text class='visible' x='5' y='41'>type: boolean</text>
-<line class='connection' id='p_1_3_1_4_1_22_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_22_1_11' class='box' transform='translate(965,6156)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_22_1_11")' onmouseout='makeHidden("_1_3_1_4_1_22_1_11")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>publicHolidays</text>
+<text class='visible' x='5' y='41'>type: boolean</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' id='p_1_3_1_4_1_22_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_23' class='box' transform='translate(686,7008)'>
+<g id='_1_3_1_4_1_23' class='box' transform='translate(686,6227)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_23")' onmouseout='makeHidden("_1_3_1_4_1_23")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>paymentMethod</text>
-<text class='visible' x='5' y='41'>type: PaymentMethod</text>
+<text class='strong' x='5' y='27'>popularHours</text>
+<text class='visible' x='5' y='41'>type: TimeSlot</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 <use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_23' onclick='show("_1_3_1_4_1_23")'/>
 </g>
 
-<g id='_1_3_1_4_1_23_1' class='box' transform='translate(860,7008)'>
+<g id='_1_3_1_4_1_23_1' class='box' transform='translate(860,6227)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -2128,10 +1931,233 @@ onmouseover='makeVisible("_1_3_1_4_1_23")' onmouseout='makeHidden("_1_3_1_4_1_23
 <use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_23_1' onclick='show("_1_3_1_4_1_23_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_23_1_1' class='box' transform='translate(965,7008)'>
+<g id='_1_3_1_4_1_23_1_1' class='box' transform='translate(965,6227)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
 onmouseover='makeVisible("_1_3_1_4_1_23_1_1")' onmouseout='makeHidden("_1_3_1_4_1_23_1_1")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startDayOfWeek</text>
+<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_2' class='box' transform='translate(965,6298)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_2")' onmouseout='makeHidden("_1_3_1_4_1_23_1_2")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endDayOfWeek</text>
+<text class='visible' x='5' y='41'>type: WeekDayEnum</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_3' class='box' transform='translate(965,6369)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_3")' onmouseout='makeHidden("_1_3_1_4_1_23_1_3")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startTime</text>
+<text class='visible' x='5' y='41'>type: time</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_4' class='box' transform='translate(965,6440)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_4")' onmouseout='makeHidden("_1_3_1_4_1_23_1_4")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endTime</text>
+<text class='visible' x='5' y='41'>type: time</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_5' class='box' transform='translate(965,6511)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_5")' onmouseout='makeHidden("_1_3_1_4_1_23_1_5")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startMonth</text>
+<text class='visible' x='5' y='41'>type: gMonth</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_6' class='box' transform='translate(965,6582)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_6")' onmouseout='makeHidden("_1_3_1_4_1_23_1_6")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endMonth</text>
+<text class='visible' x='5' y='41'>type: gMonth</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_7' class='box' transform='translate(965,6653)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_7")' onmouseout='makeHidden("_1_3_1_4_1_23_1_7")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>startDayOfMonth</text>
+<text class='visible' x='5' y='41'>type: gDay</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_8' class='box' transform='translate(965,6724)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_8")' onmouseout='makeHidden("_1_3_1_4_1_23_1_8")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>endDayOfMonth</text>
+<text class='visible' x='5' y='41'>type: gDay</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_9' class='box' transform='translate(965,6795)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_9")' onmouseout='makeHidden("_1_3_1_4_1_23_1_9")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>concat</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_10' class='box' transform='translate(965,6866)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_10")' onmouseout='makeHidden("_1_3_1_4_1_23_1_10")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>isOpen</text>
+<text class='visible' x='5' y='41'>type: boolean</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_23_1_11' class='box' transform='translate(965,6937)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_23_1_11")' onmouseout='makeHidden("_1_3_1_4_1_23_1_11")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>publicHolidays</text>
+<text class='visible' x='5' y='41'>type: boolean</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' id='p_1_3_1_4_1_23_1_11' x1='-35' y1='-687' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+</g>
+
+<g id='_1_3_1_4_1_24' class='box' transform='translate(686,7008)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_24")' onmouseout='makeHidden("_1_3_1_4_1_24")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>service</text>
+<text class='visible' x='5' y='41'>type: Service</text>
+<text x='5' y='59'>0..∞</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_24' onclick='show("_1_3_1_4_1_24")'/>
+</g>
+
+<g id='_1_3_1_4_1_24_1' class='box' transform='translate(860,7008)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_24_1' onclick='show("_1_3_1_4_1_24_1")'/>
+</g>
+
+<g id='_1_3_1_4_1_24_1_1' class='box' transform='translate(965,7008)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_24_1_1")' onmouseout='makeHidden("_1_3_1_4_1_24_1_1")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>serviceType</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_24_1_2' class='box' transform='translate(965,7079)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_24_1_2")' onmouseout='makeHidden("_1_3_1_4_1_24_1_2")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>isAvailable</text>
+<text class='visible' x='5' y='41'>type: boolean</text>
+<line class='connection' id='p_1_3_1_4_1_24_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<path class='connection' d='M-35,-40 Q-35,15 0,23'/>
+</g>
+
+<g id='_1_3_1_4_1_25' class='box' transform='translate(686,7150)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_25")' onmouseout='makeHidden("_1_3_1_4_1_25")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>paymentMethod</text>
+<text class='visible' x='5' y='41'>type: PaymentMethod</text>
+<text x='5' y='59'>0..∞</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_25' onclick='show("_1_3_1_4_1_25")'/>
+</g>
+
+<g id='_1_3_1_4_1_25_1' class='box' transform='translate(860,7150)'>
+<rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
+<circle cx='42' cy='14' r='2'/>
+<circle cx='42' cy='23' r='2'/>
+<circle cx='42' cy='32' r='2'/>
+<text class='small' x='30' y='17'>1</text>
+<text class='small' x='30' y='26'>2</text>
+<text class='small' x='30' y='35'>3</text>
+<line x1='42' y1='14' x2='42' y2='32'/>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_25_1' onclick='show("_1_3_1_4_1_25_1")'/>
+</g>
+
+<g id='_1_3_1_4_1_25_1_1' class='box' transform='translate(965,7150)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_25_1_1")' onmouseout='makeHidden("_1_3_1_4_1_25_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -2140,43 +2166,17 @@ onmouseover='makeVisible("_1_3_1_4_1_23_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_23_1_2' class='box' transform='translate(965,7079)'>
+<g id='_1_3_1_4_1_25_1_2' class='box' transform='translate(965,7221)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_23_1_2")' onmouseout='makeHidden("_1_3_1_4_1_23_1_2")'/>
+onmouseover='makeVisible("_1_3_1_4_1_25_1_2")' onmouseout='makeHidden("_1_3_1_4_1_25_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>isAvailable</text>
 <text class='visible' x='5' y='41'>type: boolean</text>
-<line class='connection' id='p_1_3_1_4_1_23_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_25_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-</g>
-
-<g id='_1_3_1_4_1_24' class='box' transform='translate(686,7150)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_24")' onmouseout='makeHidden("_1_3_1_4_1_24")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>lon</text>
-<text class='visible' x='5' y='41'>type: double</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-</g>
-
-<g id='_1_3_1_4_1_25' class='box' transform='translate(686,7221)'>
-<rect class='shadow' x='3' y='3' width='129' height='46'/>
-<rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_25")' onmouseout='makeHidden("_1_3_1_4_1_25")'/>
-<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
-<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
-<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>lat</text>
-<text class='visible' x='5' y='41'>type: double</text>
-<text x='5' y='59'>0..1</text>
-<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
 <g id='_1_3_1_4_1_26' class='box' transform='translate(686,7292)'>
@@ -2186,7 +2186,7 @@ onmouseover='makeVisible("_1_3_1_4_1_26")' onmouseout='makeHidden("_1_3_1_4_1_26
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
-<text class='strong' x='5' y='27'>alt</text>
+<text class='strong' x='5' y='27'>lon</text>
 <text class='visible' x='5' y='41'>type: double</text>
 <text x='5' y='59'>0..1</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
@@ -2199,14 +2199,79 @@ onmouseover='makeVisible("_1_3_1_4_1_27")' onmouseout='makeHidden("_1_3_1_4_1_27
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>lat</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_28' class='box' transform='translate(686,7434)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_28")' onmouseout='makeHidden("_1_3_1_4_1_28")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>alt</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_29' class='box' transform='translate(686,7505)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_29")' onmouseout='makeHidden("_1_3_1_4_1_29")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>area</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_30' class='box' transform='translate(686,7576)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_30")' onmouseout='makeHidden("_1_3_1_4_1_30")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>length</text>
+<text class='visible' x='5' y='41'>type: double</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_31' class='box' transform='translate(686,7647)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_31")' onmouseout='makeHidden("_1_3_1_4_1_31")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
+<text class='strong' x='5' y='27'>geoHash</text>
+<text class='visible' x='5' y='41'>type: string</text>
+<text x='5' y='59'>0..1</text>
+<line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
+</g>
+
+<g id='_1_3_1_4_1_32' class='box' transform='translate(686,7718)'>
+<rect class='shadow' x='3' y='3' width='129' height='46'/>
+<rect class='boxelement' x='0' y='0' width='129' height='46'
+onmouseover='makeVisible("_1_3_1_4_1_32")' onmouseout='makeHidden("_1_3_1_4_1_32")'/>
+<text class='visible' x='5' y='13'>http://slipo.eu/def</text>
+<text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
+<text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>geom</text>
 <text class='visible' x='5' y='41'>type: Geometry</text>
 <text x='5' y='59'>1..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_27' onclick='show("_1_3_1_4_1_27")'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_32' onclick='show("_1_3_1_4_1_32")'/>
 </g>
 
-<g id='_1_3_1_4_1_27_1' class='box' transform='translate(860,7363)'>
+<g id='_1_3_1_4_1_32_1' class='box' transform='translate(860,7718)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -2216,13 +2281,13 @@ onmouseover='makeVisible("_1_3_1_4_1_27")' onmouseout='makeHidden("_1_3_1_4_1_27
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_27_1' onclick='show("_1_3_1_4_1_27_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_32_1' onclick='show("_1_3_1_4_1_32_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_27_1_1' class='box' transform='translate(965,7363)'>
+<g id='_1_3_1_4_1_32_1_1' class='box' transform='translate(965,7718)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_27_1_1")' onmouseout='makeHidden("_1_3_1_4_1_27_1_1")'/>
+onmouseover='makeVisible("_1_3_1_4_1_32_1_1")' onmouseout='makeHidden("_1_3_1_4_1_32_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -2232,23 +2297,23 @@ onmouseover='makeVisible("_1_3_1_4_1_27_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_27_1_2' class='box' transform='translate(965,7434)'>
+<g id='_1_3_1_4_1_32_1_2' class='box' transform='translate(965,7789)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_27_1_2")' onmouseout='makeHidden("_1_3_1_4_1_27_1_2")'/>
+onmouseover='makeVisible("_1_3_1_4_1_32_1_2")' onmouseout='makeHidden("_1_3_1_4_1_32_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>geomWKT</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_3_1_4_1_27_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_32_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_28' class='box' transform='translate(686,7505)'>
+<g id='_1_3_1_4_1_33' class='box' transform='translate(686,7860)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_28")' onmouseout='makeHidden("_1_3_1_4_1_28")'/>
+onmouseover='makeVisible("_1_3_1_4_1_33")' onmouseout='makeHidden("_1_3_1_4_1_33")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -2256,10 +2321,10 @@ onmouseover='makeVisible("_1_3_1_4_1_28")' onmouseout='makeHidden("_1_3_1_4_1_28
 <text class='visible' x='5' y='41'>type: AccuracyInfo</text>
 <text x='5' y='59'>0..∞</text>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_28' onclick='show("_1_3_1_4_1_28")'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_33' onclick='show("_1_3_1_4_1_33")'/>
 </g>
 
-<g id='_1_3_1_4_1_28_1' class='box' transform='translate(860,7505)'>
+<g id='_1_3_1_4_1_33_1' class='box' transform='translate(860,7860)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -2269,13 +2334,13 @@ onmouseover='makeVisible("_1_3_1_4_1_28")' onmouseout='makeHidden("_1_3_1_4_1_28
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_28_1' onclick='show("_1_3_1_4_1_28_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_33_1' onclick='show("_1_3_1_4_1_33_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_28_1_1' class='box' transform='translate(965,7505)'>
+<g id='_1_3_1_4_1_33_1_1' class='box' transform='translate(965,7860)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_28_1_1")' onmouseout='makeHidden("_1_3_1_4_1_28_1_1")'/>
+onmouseover='makeVisible("_1_3_1_4_1_33_1_1")' onmouseout='makeHidden("_1_3_1_4_1_33_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -2284,35 +2349,35 @@ onmouseover='makeVisible("_1_3_1_4_1_28_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_28_1_2' class='box' transform='translate(965,7576)'>
+<g id='_1_3_1_4_1_33_1_2' class='box' transform='translate(965,7931)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_28_1_2")' onmouseout='makeHidden("_1_3_1_4_1_28_1_2")'/>
+onmouseover='makeVisible("_1_3_1_4_1_33_1_2")' onmouseout='makeHidden("_1_3_1_4_1_33_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>accuracyValue</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_3_1_4_1_28_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_33_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 
-<g id='_1_3_1_4_1_29' class='box' transform='translate(686,7647)'>
+<g id='_1_3_1_4_1_34' class='box' transform='translate(686,8002)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_29")' onmouseout='makeHidden("_1_3_1_4_1_29")'/>
+onmouseover='makeVisible("_1_3_1_4_1_34")' onmouseout='makeHidden("_1_3_1_4_1_34")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>otherAttr</text>
 <text class='visible' x='5' y='41'>type: KeyValAttr</text>
 <text x='5' y='59'>0..∞</text>
-<line class='connection' id='p_1_3_1_4_1_29' x1='-35' y1='-6083' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_34' x1='-35' y1='-6438' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
-<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_29' onclick='show("_1_3_1_4_1_29")'/>
+<use x='128' y='17' xlink:href='#minus' id='s_1_3_1_4_1_34' onclick='show("_1_3_1_4_1_34")'/>
 </g>
 
-<g id='_1_3_1_4_1_29_1' class='box' transform='translate(860,7647)'>
+<g id='_1_3_1_4_1_34_1' class='box' transform='translate(860,8002)'>
 <rect class='boxcompositor' x='0' y='8' width='60' height='31' rx='9'/>
 <circle cx='42' cy='14' r='2'/>
 <circle cx='42' cy='23' r='2'/>
@@ -2322,13 +2387,13 @@ onmouseover='makeVisible("_1_3_1_4_1_29")' onmouseout='makeHidden("_1_3_1_4_1_29
 <text class='small' x='30' y='35'>3</text>
 <line x1='42' y1='14' x2='42' y2='32'/>
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
-<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_29_1' onclick='show("_1_3_1_4_1_29_1")'/>
+<use x='59' y='17' xlink:href='#minus' id='s_1_3_1_4_1_34_1' onclick='show("_1_3_1_4_1_34_1")'/>
 </g>
 
-<g id='_1_3_1_4_1_29_1_1' class='box' transform='translate(965,7647)'>
+<g id='_1_3_1_4_1_34_1_1' class='box' transform='translate(965,8002)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_29_1_1")' onmouseout='makeHidden("_1_3_1_4_1_29_1_1")'/>
+onmouseover='makeVisible("_1_3_1_4_1_34_1_1")' onmouseout='makeHidden("_1_3_1_4_1_34_1_1")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
@@ -2337,16 +2402,16 @@ onmouseover='makeVisible("_1_3_1_4_1_29_1_1")' onmouseout='makeHidden("_1_3_1_4_
 <line class='connection' x1='-35' y1='23' x2='0' y2='23'/>
 </g>
 
-<g id='_1_3_1_4_1_29_1_2' class='box' transform='translate(965,7718)'>
+<g id='_1_3_1_4_1_34_1_2' class='box' transform='translate(965,8073)'>
 <rect class='shadow' x='3' y='3' width='129' height='46'/>
 <rect class='boxelement' x='0' y='0' width='129' height='46'
-onmouseover='makeVisible("_1_3_1_4_1_29_1_2")' onmouseout='makeHidden("_1_3_1_4_1_29_1_2")'/>
+onmouseover='makeVisible("_1_3_1_4_1_34_1_2")' onmouseout='makeHidden("_1_3_1_4_1_34_1_2")'/>
 <text class='visible' x='5' y='13'>http://slipo.eu/def</text>
 <text class='hidden' visibility='hidden' x='5' y='13'>nillable: 0</text>
 <text class='hidden' visibility='hidden' x='5' y='41'>abstract: 0</text>
 <text class='strong' x='5' y='27'>value</text>
 <text class='visible' x='5' y='41'>type: string</text>
-<line class='connection' id='p_1_3_1_4_1_29_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
+<line class='connection' id='p_1_3_1_4_1_34_1_2' x1='-35' y1='-48' x2='-35' y2='-40'/>
 <path class='connection' d='M-35,-40 Q-35,15 0,23'/>
 </g>
 

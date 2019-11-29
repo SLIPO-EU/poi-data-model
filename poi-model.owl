@@ -13,7 +13,7 @@
     <owl:Ontology rdf:about="http://slipo.eu/def">
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <rdfs:comment>SLIPO POI data model.</rdfs:comment>
-        <owl:versionInfo xml:lang="en">1.0.0</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">1.1.0</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -101,7 +101,102 @@
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#time"/>
     
 
+    <!-- http://slipo.eu/def#AssignedCategoryEnum -->
 
+    <rdfs:Datatype rdf:about="http://slipo.eu/def#AssignedCategoryEnum">
+        <rdfs:comment xml:lang="en">Enumeration of automatically assigned categories as used internally in SLIPO.</rdfs:comment>
+        <owl:equivalentClass>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>ACCOMMODATION</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>AUTOMOTIVE</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>BUSINESS</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>EAT/DRINK</rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first>EDUCATION</rdf:first>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first>HEALTH</rdf:first>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first>LANDUSE</rdf:first>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first>PUBLIC SERVICE</rdf:first>
+                                                                                <rdf:rest>
+                                                                                    <rdf:Description>
+                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                        <rdf:first>RELIGIOUS</rdf:first>
+                                                                                        <rdf:rest>
+                                                                                            <rdf:Description>
+                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                <rdf:first>SETTLEMENTS</rdf:first>
+                                                                                                <rdf:rest>
+                                                                                                    <rdf:Description>
+                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                        <rdf:first>SHOP</rdf:first>
+                                                                                                        <rdf:rest>
+                                                                                                            <rdf:Description>
+                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                <rdf:first>SPORT</rdf:first>
+                                                                                                                <rdf:rest>
+                                                                                                                    <rdf:Description>
+                                                                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                        <rdf:first>TOURISM</rdf:first>
+                                                                                                                        <rdf:rest>
+                                                                                                                            <rdf:Description>
+                                                                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                                                                <rdf:first>TRANSPORT</rdf:first>
+                                                                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                                                                            </rdf:Description>
+                                                                                                                        </rdf:rest>
+                                                                                                                    </rdf:Description>
+                                                                                                                </rdf:rest>
+                                                                                                            </rdf:Description>
+                                                                                                        </rdf:rest>
+                                                                                                    </rdf:Description>
+                                                                                                </rdf:rest>
+                                                                                            </rdf:Description>
+                                                                                        </rdf:rest>
+                                                                                    </rdf:Description>
+                                                                                </rdf:rest>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </owl:equivalentClass>
+    </rdfs:Datatype>
+	
+	
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -141,7 +236,6 @@
         <rdfs:comment xml:lang="en">The category the POI belongs to.</rdfs:comment>
     </owl:ObjectProperty>
     
-
 
     <!-- http://slipo.eu/def#email -->
 
@@ -360,8 +454,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
 
     <!-- http://slipo.eu/def#accuracyType -->
 
@@ -403,6 +495,26 @@
     
 
 
+    <!-- http://slipo.eu/def#area -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#area">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The area of the POI&apos;s geometry. This is only valid for POI entities represented with a surface (e.g., a polygon or multipolygon). By default, the area value is expressed in square meters.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+	
+
+    <!-- http://slipo.eu/def#assignedCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#assignedCategory">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:range rdf:resource="http://slipo.eu/def#AssignedCategoryEnum"/>
+        <rdfs:comment xml:lang="en">Specifies an internal category assigned to each POI according to a default (embedded) classification scheme used internally in SLIPO.</rdfs:comment>
+    </owl:DatatypeProperty>
+	
+	
+	
     <!-- http://slipo.eu/def#attrKey -->
 
     <owl:DatatypeProperty rdf:about="http://slipo.eu/def#attrKey">
@@ -563,6 +675,16 @@
     
 
 
+    <!-- http://slipo.eu/def#geoHash -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#geoHash">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">Encodes the geographic location of the POI into a short string of letters and digits. By default, a string length (precision) of 8 is used in SLIPO; length values outside of [1,12] are rejected.</rdfs:comment>
+    </owl:DatatypeProperty>
+
+
+
     <!-- http://slipo.eu/def#geomType -->
 
     <owl:DatatypeProperty rdf:about="http://slipo.eu/def#geomType">
@@ -629,6 +751,16 @@
         <rdfs:domain rdf:resource="http://slipo.eu/def#LicenseInfo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
         <rdfs:comment xml:lang="en">License URL.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://slipo.eu/def#length -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#length">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The length of the POI&apos;s geometry. This is only valid for POI entities represented as lines or surfaces (e.g., a polygon or multipolygon); in the latter case, it represents the perimeter of the surface. By default, the length value is expressed in meters.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -771,6 +903,15 @@
         <rdfs:comment xml:lang="en">House number.</rdfs:comment>
     </owl:DatatypeProperty>
     
+
+
+    <!-- http://slipo.eu/def#operator -->
+
+    <owl:DatatypeProperty rdf:about="http://slipo.eu/def#operator">
+        <rdfs:domain rdf:resource="http://slipo.eu/def#POI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+        <rdfs:comment xml:lang="en">The name of the POI&apos;s operator, such as the company name, the person running the business, etc.</rdfs:comment>
+    </owl:DatatypeProperty>
 
 
     <!-- http://slipo.eu/def#otherLink -->
@@ -1458,6 +1599,27 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#area"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#assignedCategory"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://slipo.eu/def#AssignedCategoryEnum"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#geoHash"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://slipo.eu/def#homepage"/>
@@ -1479,11 +1641,25 @@
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#length"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://slipo.eu/def#lon"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+		<rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://slipo.eu/def#operator"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
